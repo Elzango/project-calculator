@@ -1,42 +1,28 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Calculator</title>
-    <link rel="stylesheet" href="./index.css">
-</head>
-<body>
-    <header>
-    </header>
-    <main>
-        <div class="displayContainer">
-            <div id="display">419</div>
-        </div>
-        <div class="buttonsContainer">
-            <button id="sevenButton">7</button>
-            <button id="eightButton">8</button>
-            <button id="nineButton">9</button>
-            <button id="divideButton">/</button>
-            <button id="fourButton">4</button>
-            <button id="fiveButton">5</button>
-            <button id="sixButton">6</button>
-            <button id="multiplyButton">*</button>
-            <button id="oneButton">1</button>
-            <button id="twoButton">2</button>
-            <button id="threeButton">3</button>
-            <button id="subtractButton">-</button>
-            <button id="zeroButton">0</button>
-            <button id="decimalButton">.</button>
-            <button id="equalButton">=</button>
-            <button id="addButton">+</button>
-            <button id="delButton">del</button>
-            <button id="clearButton">clear</button>
-        </div>
-    </main>
-    <footer>
-    </footer>
-    <script src="./index.js"></script>
-</body>
-</html>
+.mainContainer 
+{
+  width: 300px;
+  margin: 50px auto; /* 50px from the top, centered left-to-right */
+  border: 2px solid black;
+}
+
+#display 
+{
+  padding: 10px;
+  font-size: 2em;
+  font-weight: bold;
+  text-align: right;
+  background-color: #eee; /* A light gray */
+}
+
+.buttonsContainer
+{
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 5px;
+}
+
+.buttonsContainer button {
+  padding: 20px;
+  font-size: 1.2em;
+  border: 1px solid #ccc;
+}
